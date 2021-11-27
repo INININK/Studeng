@@ -1,0 +1,66 @@
+public class Student {
+    public static void main(String[] args) {
+        studeng s=new studeng("jason",25,"asdsaada","365214","154654658546");
+        System.out.println(s.getpostaddress());
+
+    }
+}
+class studeng{
+    private String name;
+    private int age;
+    private  String address;
+    private String zipcode;
+    private  String mobile;
+
+    public studeng(String name, int age, String address, String zipcode, String mobile) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.zipcode = zipcode;
+        this.mobile = mobile;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setZipcode(String zipcode) {
+        this.zipcode = zipcode;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getZipcode() {
+        return zipcode;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+    public String getpostaddress(){
+        return "地址:"+this.getAddress()+" 邮编:"+ this.getZipcode();
+
+    }
+}
